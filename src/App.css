@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  background: 333;
+  min-height: 100vh;
+  background-image: url("./music.jpg");
+ 
+  /* background: linear-gradient(135deg, #000000 0%, #333 48%, #686868 100%); */
+  background-size: contain;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.video-player {
+  max-width: 750px;
+  position: relative;
+  overflow: hidden;
+}
+.video-player h1{
   color: white;
+  background: linear-gradient(135deg, #000000 0%, #333 48%, #686868 100%);
+  font-family: cursive;
+  margin: 0;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+.video {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.player-controls {
+ text-align: center;
+} 
+
+
+
+.play-button {
+  width: 10%;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.play-button:focus {
+  outline: none;
+}
+
+.stop-button {
+  width: 10%;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.stop-button:focus {
+  outline: none;
+}
+
+.rewind-button {
+  width: 10%;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.rewind-button:focus {
+  outline: none;
+}
+.fast-button {
+  width: 10%;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.fast-button:focus {
+  outline: none;
 }
